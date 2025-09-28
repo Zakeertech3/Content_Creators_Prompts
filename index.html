@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Prompt Hub - AI Prompts & Tools for Content Creators</title>
+    <meta name="description" content="The ultimate collection of AI prompts and tools for content creators. Access 1000+ curated prompts and 30+ AI tools for image and video generation.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <h1 class="brand-title">Creator Prompt Hub</h1>
+                <span class="brand-tagline">AI Prompts & Tools for Creators</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#image-prompts" class="nav-link">Image Prompts</a></li>
+                <li><a href="#video-prompts" class="nav-link">Video Prompts</a></li>
+                <li><a href="#ai-tools" class="nav-link">AI Tools</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="mainContent">
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        The Ultimate AI Prompt Library
+                        <span class="gradient-text">for Content Creators</span>
+                    </h1>
+                    <p class="hero-description">
+                        Access thousands of curated AI prompts and 30+ powerful tools for image and video generation. 
+                        Create stunning content with the best prompts from top GitHub repositories.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="scrollToSection('image-prompts')">
+                            🎨 Explore Image Prompts
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('video-prompts')">
+                            🎬 Discover Video Prompts
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="1000">0</span>
+                        <span class="stat-label">AI Prompts</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="30">0</span>
+                        <span class="stat-label">AI Tools</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="12">0</span>
+                        <span class="stat-label">GitHub Repos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Prompts Section -->
+        <section id="image-prompts" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🎨 Image Prompts Collections</h2>
+                    <p class="section-description">Curated collections from top GitHub repositories</p>
+                </div>
+                
+                <div class="resources-grid" id="imagePromptsGrid">
+                    <!-- Image prompt resources will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Video Prompts Section -->
+        <section id="video-prompts" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🎬 Video Prompts Collections</h2>
+                    <p class="section-description">Professional video generation prompts and resources</p>
+                </div>
+                
+                <div class="resources-grid" id="videoPromptsGrid">
+                    <!-- Video prompt resources will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Tools Section -->
+        <section id="ai-tools" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🤖 AI Tools Directory</h2>
+                    <p class="section-description">30+ powerful AI tools for content creation</p>
+                </div>
+                
+                <div class="tools-categories">
+                    <div class="category-tabs">
+                        <button class="tab-btn active" data-category="all">All Tools</button>
+                        <button class="tab-btn" data-category="image">Image Generation</button>
+                        <button class="tab-btn" data-category="video">Video Generation</button>
+                        <button class="tab-btn" data-category="text">Text & Chat</button>
+                    </div>
+                    
+                    <div class="tools-grid" id="aiToolsGrid">
+                        <!-- AI tools will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About Creator Prompt Hub</h2>
+                        <p>Creator Prompt Hub is your one-stop destination for AI prompts and tools. We curate the best resources from GitHub repositories and provide direct access to 30+ AI platforms.</p>
+                        
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <span class="feature-icon">🎯</span>
+                                <div>
+                                    <h3>Curated Collections</h3>
+                                    <p>Hand-picked prompts from top GitHub repositories</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🚀</span>
+                                <div>
+                                    <h3>Direct Tool Access</h3>
+                                    <p>One-click access to 30+ AI platforms</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">📱</span>
+                                <div>
+                                    <h3>Mobile Friendly</h3>
+                                    <p>Responsive design for all devices</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Creator Prompt Hub</h3>
+                    <p class="footer-description">
+                        Empowering content creators with the best AI prompts and tools for image and video generation.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#image-prompts">Image Prompts</a></li>
+                        <li><a href="#video-prompts">Video Prompts</a></li>
+                        <li><a href="#ai-tools">AI Tools</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                        <li><a href="#about">Contributing</a></li>
+                        <li><a href="#about">API</a></li>
+                        <li><a href="#about">License</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Creator Prompt Hub. Open source project with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
